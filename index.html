@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>
+
+		<meta charset="utf-8">
+		<title>Encriptador de texto</title>
+		<link rel="stylesheet" href="reset.css">
+		<link rel="stylesheet" href="styleEncritador.css">
+
+	</head>
+
+	<body>
+		<header>
+			<img src="imagenes/Logo.png" alt="Logo de alura con la inicial da letra a">
+		</header>
+
+		<main>
+			<section>
+				<textarea placeholder="Increse el texto aqui" class="input-texto" cols="40" rows="6"></textarea>
+				
+				<div class="textBtn">
+					<div id="div-desaparece">
+						<h6 class="informacion"><img src="imagenes/Vector.png"> Solo letras minúsculas y sin acentos.</h6>
+					</div>
+					
+					<div class="botones">
+	
+						<button class="encriptar" onclick="btnEncriptar()">Encriptar</button>
+						<button class="descencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+					</div>	
+				</div>
+			</section>
+
+			<section class="mensaje-box">
+				<textarea placeholder="" class="mensaje" cols="18" rows="8" readonly></textarea>
+				<div class="mensaje-text">
+					<p class="mensaje-negrita">Ningún mensaje fue encontrado</p>
+					<p class="mensaje-ingresar">Ingresa el texto que desees encriptar o desencriptar.</p>
+				</div>
+				<button class="copiar" onclick="copiar()">copiar</button>
+			</section>
+		</main>	
+		
+		<script src="script.js"></script>
+    </body>
+</html>
+
